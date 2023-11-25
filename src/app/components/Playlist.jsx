@@ -11,15 +11,25 @@ const Playlist = (props) => {
   );
 
   return (
-    <div className="Playlist">
-      <input onChange={handleNameChange} defaultValue={"New Playlist"} />
+    <div className="
+      m-2 p-2 grid justify-items-center
+      ">
+      <input onChange={handleNameChange} defaultValue={"New Playlist"} 
+      className="
+      px-2 m-2 text-white bg-[#0b2f37] rounded-full 
+      border-2 border-[#ee9985] outline-none focus:border-dashed 
+      "/>
       <TrackList
         tracks={props.playlistTracks}
         isRemoval={true}
         onRemove={props.onRemove}
       />
-      <button className="Playlist-save" onClick={props.onSave}>
-        SAVE TO SPOTIFY
+      <button onClick={props.onSave} 
+      className="
+        px-2 style-script text-white text-xl rounded-lg 
+        border-2 border-[#ee9985] hover:bg-[#ee9985]
+      ">
+        Save
       </button>
     </div>
   );

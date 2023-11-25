@@ -46,11 +46,11 @@ const App = () => {
 
   return (
       <div className="
-        m-4 w-4/5
+        m-4 w-full
       ">
-        <SearchBar onSearch={search} />
+        <SearchBar onSearch={search}/>
         <div className=" 
-        grid grid-cols-[60%_40%] m-2
+          m-2 grid grid-cols-[50%_50%] 
         ">
           <SearchResults searchResults={searchResults} onAdd={addTrack} />
           <Playlist

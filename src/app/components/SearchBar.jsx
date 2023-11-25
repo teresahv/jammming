@@ -15,15 +15,18 @@ const SearchBar = (props) => {
   }, [props.onSearch, term]);
 
   return (
-    <div className="p-2 flex items-center ">
+    <div className="
+      p-4 grid justify-center 
+      content-center grid-cols-[60%_auto] 
+    " >
       <input placeholder="What do you want to listen?" onChange={handleTermChange} 
       className="
-      text-white bg-[#0b2f37] rounded-full
-      border-2 border-[#958dc4] p-2 m-1 outline-none
-      focus:border-dashed w-full
+      text-white bg-[#0b2f37] rounded-full 
+      border-2 border-[#958dc4] px-2 m-2 outline-none
+      focus:border-dashed 
       "/>
       <button onClick={search} className=" 
-       rounded-full bg-[#958dc4] p-2 m-1
+       rounded-full bg-[#958dc4] p-2 m-1 h-fit
       " >
         <TbMusicSearch size={26}
             className="
