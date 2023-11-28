@@ -3,7 +3,7 @@ import Track from "./Track";
 const TrackList = (props) => {
   return (
     <div className="
-    m-2 p-2 bg-[#3b585e] rounded-lg 
+    m-2 p-2 text-white bg-[#3b585e] rounded-lg 
     drop-shadow-md grid justify-items-center w-full
     ">
       {props.tracks.map((track) => {

@@ -16,8 +16,8 @@ const SearchBar = (props) => {
 
   return (
     <div className="
-      p-4 grid justify-center 
-      content-center grid-cols-[60%_auto] 
+      p-4 grid justify-center content-center 
+      grid-cols-[80%_auto] sm:grid-cols-[40%_auto]
     " >
       <input placeholder="What do you want to listen?" onChange={handleTermChange} 
       className="

@@ -12,12 +12,12 @@ const Playlist = (props) => {
 
   return (
     <div className="
-      m-2 p-2 grid justify-items-center
+      m-2 p-2 grid justify-items-center h-fit
       ">
       <input onChange={handleNameChange} defaultValue={"New Playlist"} 
       className="
-      px-2 m-2 text-white bg-[#0b2f37] rounded-full 
-      border-2 border-[#ee9985] outline-none focus:border-dashed 
+      px-2 m-2 text-white bg-[#0b2f37] rounded-full outline-none
+      border-2 border-[#ee9985] focus:border-dashed 
       "/>
       <TrackList
         tracks={props.playlistTracks}

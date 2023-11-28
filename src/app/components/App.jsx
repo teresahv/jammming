@@ -4,8 +4,7 @@ import React, { useState, useCallback } from "react";;
 import Playlist from "./Playlist";
 import SearchBar from "./SearchBar";
 import SearchResults from "./SearchResults";
-import { Style_Script } from "next/font/google";
-// import Spotify from "@/api/spotify/Spotify";
+import Spotify from "../api/spotify/Spotify";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -46,11 +45,11 @@ const App = () => {
 
   return (
       <div className="
-        m-4 w-full
+        m-4 w-full 
       ">
         <SearchBar onSearch={search}/>
         <div className=" 
-          m-2 grid grid-cols-[50%_50%] 
+          m-2 w-full flex justify-center grow flex-wrap sm:flex-nowrap
         ">
           <SearchResults searchResults={searchResults} onAdd={addTrack} />
           <Playlist
